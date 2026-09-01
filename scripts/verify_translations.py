@@ -54,6 +54,8 @@ KNOWN_CODE_BLOCK_DIFFS = {
     "sdk/reference/smart-dialer-config": (10, 9),
     # 9 code blocks added to MD after translation export (expanded reference)
     "vpn/reference/access-key-config": (17, 8),
+    # 2 code blocks added to MD after translation export (ssconf:// key section)
+    "vpn/management/dynamic-access-keys": (7, 5),
 }
 
 # Known code block content differences: counts match but the content of
@@ -76,6 +78,8 @@ KNOWN_LINK_COUNT_DIFFS = {
     "vpn/reference/access-key-config": (39, 28),
     # 1 link to advanced-config added to MD after translation export
     "vpn/advanced/caddy": (9, 8),
+    # 1 anchor link added to MD after translation export (ssconf:// key section)
+    "vpn/management/dynamic-access-keys": (11, 10),
 }
 
 # Known link order swaps: some translators reordered text, causing link
@@ -96,7 +100,10 @@ KNOWN_ENGLISH_ONLY_ANCHORS: dict[str, set[str]] = {}
 
 # Known admonition count differences: English has admonitions added after
 # translation export. Format: doc_path -> (english_count, translated_count)
-KNOWN_ADMONITION_DIFFS: dict[str, tuple[int, int]] = {}
+KNOWN_ADMONITION_DIFFS: dict[str, tuple[int, int]] = {
+    # 2 admonitions added to MD after translation export (ssconf:// key section)
+    "vpn/management/dynamic-access-keys": (2, 0),
+}
 
 # Threshold for content parity warnings. If the translation's non-code
 # content is less than this fraction of the English content length, flag it.
