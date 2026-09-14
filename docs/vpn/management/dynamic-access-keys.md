@@ -187,5 +187,5 @@ contained remain valid until you remove the key from the server, connected
 clients stay connected, and clients that reconnect automatically (at device
 boot or app launch) reuse the last configuration they fetched successfully. A
 connected client also keeps using the configuration it fetched at connect time.
-edits to the hosted file take effect the next time it reconnects.
+Edits to the hosted file take effect the next time it reconnects.
 :::
