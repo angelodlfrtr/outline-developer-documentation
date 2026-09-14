@@ -148,7 +148,7 @@ with your requirements for accessibility and security.
 
 Hosting the configuration is only half of a dynamic access key. What your users
 add to the Outline client is the _location_ of that configuration, written with
-the `ssconf://` scheme: take the HTTPS URL the configuration is served from and
+the `ssconf://` scheme. Take the HTTPS URL the configuration is served from and
 replace `https://` with `ssconf://`.
 
 ```none
