@@ -156,7 +156,7 @@ https://keys.example.com/a1b2c3d4e5f6.yml    <- where you host the config
 ssconf://keys.example.com/a1b2c3d4e5f6.yml   <- the access key you share
 ```
 
-The client replaces the scheme back with `https://` before fetching, so the
+The client replaces the `ssconf://` scheme with `https://` before fetching, so the
 host, port, path and query string are all preserved as they are. A plain
 `https://` URL is also accepted as a dynamic access key; the `ssconf://` scheme
 exists so that the operating system opens the link with the Outline client
